@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/ARGOeu/argo-mon-library:
+      branch: main
+      repo: https://github.com/ARGOeu/argo-mon-library
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/ARGOeu/argo-mon-library git:
+        commands:
+        - /usr/bin/env sh .sqa/script.verdant_mature_seahorse.sh
+        container: qc.acc_paprika_rustic_quokka
+  QC.Doc:
+    repos:
+      github.com/ARGOeu/argo-mon-library find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.amaranth_innocent_lobster.sh
+        container: qc.doc_cobalt_hopeful_komodo
+      github.com/ARGOeu/argo-mon-library git:
+        commands:
+        - /usr/bin/env sh .sqa/script.jet_motivated_panda.sh
+        container: qc.doc_horizon_skeptical_frog
+      github.com/ARGOeu/argo-mon-library markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.poppy_kind_reindeer.sh
+        container: qc.doc_forest_wise_emu
+  QC.Lic:
+    repos:
+      github.com/ARGOeu/argo-mon-library licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.mahogany_jubilant_wasp.sh
+        container: qc.lic_forest_outgoing_fox
+  QC.Sec:
+    repos:
+      github.com/ARGOeu/argo-mon-library bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.papaya_compassionate_bear.sh
+        container: qc.sec_marigold_warm_wolf
+  QC.Sty:
+    repos:
+      github.com/ARGOeu/argo-mon-library flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.aquamarine_joyful_finch.sh
+        container: qc.sty_navy_artistic_bear
+  QC.Uni:
+    repos:
+      github.com/ARGOeu/argo-mon-library pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.onyx_gracious_unicorn.sh
+        container: qc.uni_gold_proud_turkey
+  QC.Ver:
+    repos:
+      github.com/ARGOeu/argo-mon-library get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.periwinkle_radiant_tapir.sh
+        container: qc.ver_butter_confused_roc
+timeout: 5400
