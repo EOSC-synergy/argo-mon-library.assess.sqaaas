@@ -1,0 +1,106 @@
+{
+    "meta": {
+        "version": "3.5.0",
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/argo-mon-library.assess.sqaaas/main/.report/assessment_output.json",
+        "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/argo-mon-library.assess.sqaaas/main/.report/assessment_output.json",
+        "timestamp": 1793873816.3499758
+    },
+    "repository": [
+        {
+            "url": "https://github.com/ARGOeu/argo-mon-library",
+            "name": "ARGOeu/argo-mon-library",
+            "tag": "main",
+            "commit_id": "974ff06b55f027da65acb2c92a6d8e62e5d6e4d4",
+            "is_main_repo": true,
+            "avatar_url": "https://avatars.githubusercontent.com/u/6882712?v=4",
+            "description": null,
+            "languages": null,
+            "topics": null,
+            "badge_status": "no_badge"
+        }
+    ],
+    "report": {
+        "QC.Met": {
+            "valid": false,
+            "subcriteria": {
+                "QC.Met01": {
+                    "description": "Is the software citable?",
+                    "valid": false,
+                    "hint": "The two formats for software citation supported by SQAaaS are: 1) <a href=\"https://codemeta.github.io/\" target=\"_blank\">CodeMeta</a> and 2) <a href=\"https://citation-file-format.github.io/\" target=\"_blank\">Citation File Format (CFF)</a>. While CodeMeta provides you with a more comprehensive description, CFF is a more lightweight, good-enough approach to software (with built-in support by GitHub) citation. Both provide tools (<a href=\"https://codemeta.github.io/codemeta-generator/\" target=\"_blank\">CodeMeta generator</a>, <a href=\"https://citation-file-format.github.io/cff-initializer-javascript/#/\" target=\"_blank\">CFFINIT</a>)to easily generate a working citation file. Once having the file, be sure to add it to the root path of your code repo.",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "No matching files found for language <CodeMeta> in repository searching by extensions or filenames\nNo matching files found for language <Citation File Format> in repository searching by extensions or filenames"
+                        }
+                    ],
+                    "required_for_next_level_badge": false
+                }
+            },
+            "coverage": {
+                "percentage": 0,
+                "total_subcriteria": 1,
+                "success_subcriteria": 0
+            }
+        }
+    },
+    "badge": {
+        "software": {
+            "criteria": {
+                "bronze": {
+                    "to_fulfill": [
+                        "QC.Lic",
+                        "QC.Doc",
+                        "QC.Acc"
+                    ],
+                    "missing": [
+                        "QC.Lic",
+                        "QC.Doc",
+                        "QC.Acc"
+                    ],
+                    "fulfilled": []
+                },
+                "silver": {
+                    "to_fulfill": [
+                        "QC.Met",
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Doc",
+                        "QC.Lic"
+                    ],
+                    "missing": [
+                        "QC.Met",
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Doc",
+                        "QC.Lic"
+                    ],
+                    "fulfilled": []
+                },
+                "gold": {
+                    "to_fulfill": [
+                        "QC.Sty",
+                        "QC.Met",
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Sec",
+                        "QC.Uni",
+                        "QC.Doc",
+                        "QC.Lic"
+                    ],
+                    "missing": [
+                        "QC.Sty",
+                        "QC.Met",
+                        "QC.Sec",
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Uni",
+                        "QC.Doc",
+                        "QC.Lic"
+                    ],
+                    "fulfilled": []
+                }
+            },
+            "data": {}
+        }
+    }
+}
