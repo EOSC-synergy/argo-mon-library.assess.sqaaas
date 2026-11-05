@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-mon-library git:
         commands:
-        - /usr/bin/env sh .sqa/script.purple_respectful_emu.sh
-        container: qc.acc_nutmeg_reserved_pelican
+        - /usr/bin/env sh .sqa/script.powder_content_newt.sh
+        container: qc.acc_isabelline_candid_kiwi
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-mon-library find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ash_reflective_raven.sh
-        container: qc.doc_ultramarine_easygoing_termite
+        - /usr/bin/env sh .sqa/script.pineapple_restless_spren.sh
+        container: qc.doc_polar_open_anaconda
       github.com/ARGOeu/argo-mon-library git:
         commands:
-        - /usr/bin/env sh .sqa/script.papaya_shrewd_sloth.sh
-        container: qc.doc_scarlet_creative_cormorant
+        - /usr/bin/env sh .sqa/script.azure_serene_armadillo.sh
+        container: qc.doc_salmon_serene_donkey
       github.com/ARGOeu/argo-mon-library markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.taupe_imaginative_sphinx.sh
-        container: qc.doc_silver_nervous_stork
+        - /usr/bin/env sh .sqa/script.celadon_jubilant_crocodile.sh
+        container: qc.doc_alabaster_scrappy_pangolin
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-mon-library licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.violet_adaptable_dingo.sh
-        container: qc.lic_glaucous_sociable_tiger
+        - /usr/bin/env sh .sqa/script.gamboge_responsible_octopus.sh
+        container: qc.lic_fog_adventurous_manatee
   QC.Sec:
     repos:
       github.com/ARGOeu/argo-mon-library bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cerulean_reliable_jackal.sh
-        container: qc.sec_sienna_melancholy_grasshopper
+        - /usr/bin/env sh .sqa/script.coral_sociable_puffin.sh
+        container: qc.sec_lavender_quirky_ibex
   QC.Sty:
     repos:
       github.com/ARGOeu/argo-mon-library flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.navy_reserved_squirrel.sh
-        container: qc.sty_walnut_logical_kiwi
+        - /usr/bin/env sh .sqa/script.aqua_open_condor.sh
+        container: qc.sty_clove_loyal_boa
   QC.Uni:
     repos:
       github.com/ARGOeu/argo-mon-library pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.violet_focused_axolotl.sh
-        container: qc.uni_champagne_jubilant_skunk
+        - /usr/bin/env sh .sqa/script.pink_jubilant_mongoose.sh
+        container: qc.uni_byzantium_diligent_coyote
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-mon-library get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.copper_sympathetic_dugong.sh
-        container: qc.ver_purple_shrewd_seal
+        - /usr/bin/env sh .sqa/script.chocolate_skeptical_gibbon.sh
+        container: qc.ver_isabelline_enigmatic_skunk
 timeout: 5400
